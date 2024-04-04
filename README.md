@@ -1,6 +1,6 @@
 # Task
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13. And please run npx json-server --watch lists.json for running the json server and for the api to work
 
 ## Development server
 
