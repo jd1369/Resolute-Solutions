@@ -1,0 +1,24 @@
+{
+   "items": [
+      {
+        "id": "1",
+        "name": "Example Product 1",
+        "description": "This is an example product for demonstration purposes.",
+        "image": "https://example.com/images/product1.jpg",
+        "price": 19.99,
+        "sku": "SKU12345",
+        "stockQuantity": 100,
+        "category": "Electronics"
+      },
+      {
+        "id": "2",
+        "name": "Example Product 2",
+        "description": "Another example product for demonstration.",
+        "image": "https://example.com/images/product2.jpg",
+        "price": 29.99,
+        "sku": "SKU67890",
+        "stockQuantity": 50,
+        "category": "Clothing"
+      }
+   ]
+  }

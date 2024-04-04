@@ -1,0 +1,77 @@
+
+
+<mat-table [dataSource]="dataSource">
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+    <mat-cell *matCellDef="let item">
+      <ng-container *ngIf="selectedProduct !== item; else editName">
+        {{item.name}}
+      </ng-container>
+      <ng-template #editName>
+        <mat-form-field>
+          <input matInput [(ngModel)]="item.name" placeholder="Enter name"  (keyup.enter)="updateProduct(item)">
+        </mat-form-field>
+      </ng-template>
+    </mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="description">
+    <mat-header-cell *matHeaderCellDef> Description </mat-header-cell>
+    <mat-cell *matCellDef="let item">
+      <ng-container *ngIf="selectedProduct !== item; else editDescription">
+        {{item.description}}
+      </ng-container>
+      <ng-template #editDescription>
+        <mat-form-field>
+          <textarea matInput [(ngModel)]="item.description" placeholder="Enter description"  (keyup.enter)="updateProduct(item)"></textarea>
+        </mat-form-field>
+      </ng-template>
+    </mat-cell>
+  </ng-container>
+ 
+  <ng-container matColumnDef="image">
+    <mat-header-cell *matHeaderCellDef> Image </mat-header-cell>
+    <mat-cell *matCellDef="let item">
+      <ng-container *ngIf="selectedProduct !== item; else editImage">
+        <img [src]="item.image" alt="Product Image" width="50">
+      </ng-container>
+      <ng-template #editImage>
+        <mat-form-field>
+          <input matInput [(ngModel)]="item.image" placeholder="Enter image URL"  (keyup.enter)="updateProduct(item)">
+        </mat-form-field>
+      </ng-template>
+    </mat-cell>
+  </ng-container>
+ 
+  <ng-container matColumnDef="price">
+    <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+    <mat-cell *matCellDef="let item">
+      <ng-container *ngIf="selectedProduct !== item; else editPrice">
+        {{item.price | currency}}
+      </ng-container>
+      <ng-template #editPrice>
+        <mat-form-field>
+          <input matInput [(ngModel)]="item.price" placeholder="Enter price"  (keyup.enter)="updateProduct(item)">
+        </mat-form-field>
+      </ng-template>
+    </mat-cell>
+  </ng-container>
+ 
+  <ng-container matColumnDef="actions">
+    <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+    <mat-cell *matCellDef="let item">
+      <button mat-icon-button color="primary" (click)="editProduct(item)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" (click)="deleteProduct(item.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+      <button mat-icon-button color="primary" (click)="updateProduct(item)">
+        <mat-icon>save</mat-icon>
+      </button>
+    </mat-cell>
+  </ng-container>
+ 
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+<mat-paginator [pageSizeOptions]="[5, 10, 20]" ></mat-paginator>

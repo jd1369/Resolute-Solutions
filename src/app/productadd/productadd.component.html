@@ -1,0 +1,24 @@
+<mat-card class="example-card">
+  <mat-card-content>
+    <form [formGroup]="productForm" (ngSubmit)="addItem()" class="form-container">
+      <h1>Add New item</h1>
+      <mat-form-field>
+         <input matInput placeholder="Name" formControlName="name">
+         <mat-error *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched">Name is required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+         <input matInput placeholder="Description" formControlName="description">
+         <mat-error *ngIf="productForm.get('description')?.invalid && productForm.get('description')?.touched">Description is required</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+         <input matInput placeholder="Image URL" formControlName="imageUrl">
+         <mat-error *ngIf="productForm.get('imageUrl')?.invalid && productForm.get('imageUrl')?.touched">Invalid image URL</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+         <input matInput placeholder="Price" type="number" formControlName="price">
+         <mat-error *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">Price is required and must be a positive number</mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" [disabled]="productForm.invalid">Add Item</button>
+    </form>
+  </mat-card-content>
+</mat-card>

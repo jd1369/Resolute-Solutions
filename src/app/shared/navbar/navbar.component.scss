@@ -1,0 +1,29 @@
+
+.mat-toolbar {
+    margin-bottom: 20px;
+  }
+  
+ 
+  .mat-toolbar span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px; 
+  }
+  
+ 
+  .spacer {
+    flex: 1; 
+  }
+  
+  
+  .mat-toolbar a {
+    color: white; 
+    margin-left: 10px; 
+  }
+  
+ 
+  .mat-toolbar a.active {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 4px; 
+  }
+  
