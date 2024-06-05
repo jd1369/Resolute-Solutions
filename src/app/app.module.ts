@@ -21,14 +21,19 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {  MatSortModule } from '@angular/material/sort';
+import { EditconfirmationdialogComponent } from './shared/editconfirmationdialog/editconfirmationdialog.component';
+import { DeleteconfirmationdialogComponent } from './shared/deleteconfirmationdialog/deleteconfirmationdialog.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponentComponent,
     ProductaddComponent,
-    NavbarComponent
+    NavbarComponent,
+    EditconfirmationdialogComponent,
+    DeleteconfirmationdialogComponent
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -46,7 +51,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSortModule
     
   ],
   providers: [

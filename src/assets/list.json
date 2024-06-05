@@ -1,24 +1,79 @@
 {
-   "items": [
-      {
-        "id": "1",
-        "name": "Example Product 1",
-        "description": "This is an example product for demonstration purposes.",
-        "image": "https://example.com/images/product1.jpg",
-        "price": 19.99,
-        "sku": "SKU12345",
-        "stockQuantity": 100,
-        "category": "Electronics"
-      },
-      {
-        "id": "2",
-        "name": "Example Product 2",
-        "description": "Another example product for demonstration.",
-        "image": "https://example.com/images/product2.jpg",
-        "price": 29.99,
-        "sku": "SKU67890",
-        "stockQuantity": 50,
-        "category": "Clothing"
-      }
-   ]
-  }
+  "posts": [
+    {
+      "id": 1,
+      "name": "jayadheep",
+      "email":"jayadeep@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "rohit",
+      "email":"rohit@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 5,
+      "name":"aditya",
+      "email":"aditya@gmail.com"
+    },
+    {
+      "id":6,
+      "name": "jayadheep",
+      "email":"jayadeep@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "rohit",
+      "email":"rohit@gmail.com"
+    },
+    {
+      "id": 8,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 9,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 10,
+      "name":"aditya",
+      "email":"aditya@gmail.com"
+    },
+    {
+      "id":11,
+      "name": "jayadheep",
+      "email":"jayadeep@gmail.com"
+    },
+    {
+      "id": 12,
+      "name": "rohit",
+      "email":"rohit@gmail.com"
+    },
+    {
+      "id": 13,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 14,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 15,
+      "name":"aditya",
+      "email":"aditya@gmail.com"
+    }
+  ]
+}

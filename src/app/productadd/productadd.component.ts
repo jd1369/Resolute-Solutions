@@ -13,9 +13,7 @@ export class ProductaddComponent implements OnInit {
   constructor(private shared: SharedService, private fb: FormBuilder) {
     this.productForm = this.fb.group({
       name: ['', Validators.required],
-      description: ['', Validators.required],
-      imageUrl: ['', [Validators.required, Validators.required]],
-      price: ['', [Validators.required, Validators.min(0)]]
+      email: ['', Validators.required],
     });
   }
 

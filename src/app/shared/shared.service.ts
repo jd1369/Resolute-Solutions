@@ -22,7 +22,7 @@ export class SharedService {
  }
 
  getProduct() {
-  console.log(this.apiUrl)
+  console.log(this.apiUrl) 
     return this.http.get(this.apiUrl);
     
  }

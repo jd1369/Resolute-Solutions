@@ -2,18 +2,78 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "jayadheep",
+      "email":"jayadeep@gmail.com"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "rohit",
+      "email":"rohit@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 5,
+      "name":"aditya",
+      "email":"aditya@gmail.com"
+    },
+    {
+      "id":6,
+      "name": "jayadheep",
+      "email":"jayadeep@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "rohit",
+      "email":"rohit@gmail.com"
+    },
+    {
+      "id": 8,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 9,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 10,
+      "name":"aditya",
+      "email":"aditya@gmail.com"
+    },
+    {
+      "id":11,
+      "name": "jayadheep",
+      "email":"jayadeep@gmail.com"
+    },
+    {
+      "id": 12,
+      "name": "rohit",
+      "email":"rohit@gmail.com"
+    },
+    {
+      "id": 13,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 14,
+      "name": "aravind",
+      "email":"aravind@gmail.com"
+    },
+    {
+      "id": 15,
+      "name":"aditya",
+      "email":"aditya@gmail.com"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
